@@ -1480,7 +1480,6 @@ async def _user_api_key_auth_builder(
             except Exception as e:
                 verbose_logger.debug(e)  # moving from .warning to .debug as it spams logs when team missing from cache.
 
-
         if (
             valid_token is not None
             and isinstance(valid_token, UserAPIKeyAuth)
